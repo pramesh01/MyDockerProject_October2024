@@ -23,6 +23,8 @@ pipeline{
                 
                 bat 'docker login -u %DOCKER_HUB_USR% -p %DOCKER_HUB_PSW%'
                 bat "docker push pramesh11/myprojectimage_oct:latest"
+                bat "docker tag pramesh11/myprojectimage_oct24:latest pramesh11/myprojectimage_oct24:${env.BUILD_NUMBER}"
+                bat "docker push pramesh11/myprojectimage_oct24:${env.BUILD_NUMBER}"
             }
         }
     }
