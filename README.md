@@ -1,9 +1,9 @@
-# 🚀 Selenium-Dockerized Test Automation Framework
+# 🚀 selenium-docker-multiapp-framework
 
 This repository contains a **Dockerized automation framework** for web application testing.  
 It is built with **Selenium, Java, TestNG, and Maven**, and leverages **Docker & Jenkins** for containerized execution and CI/CD integration.  
 
-The framework demonstrates **end-to-end test automation** for two sample web applications hosted on AWS CloudFront.
+The framework demonstrates end-to-end **test automation** for two different sample web applications — a **Flight Reservation system** and a **Vendor Portal.**
 
 ---
 
@@ -14,8 +14,8 @@ The framework demonstrates **end-to-end test automation** for two sample web app
 - Full **flight booking flow** automated:  
   - User Registration  
   - Login  
-  - Challenging **radio buttons** & **multi-option selections**  
-  - Dropdown selections  
+  - Challenging **radio buttons** & **multi-option** && **CheckBoxes** selections. 
+  - Criticla Dropdown selections  
   - Booking a flight and confirming the order  
 
 ### 2️⃣ Vendor Portal App  
@@ -23,7 +23,8 @@ The framework demonstrates **end-to-end test automation** for two sample web app
 - Automated **login flow** for registered users  
 - **Pagination handling** for search results  
 - Selecting multiple critical options  
-- Validation of navigation and search operations  
+- Validation of navigation and search operations
+- LogOut validation  
 
 ---
 
@@ -32,7 +33,8 @@ The framework demonstrates **end-to-end test automation** for two sample web app
 - **Java 11** → Core programming language  
 - **Selenium WebDriver** → Browser automation  
 - **TestNG** → Test execution & reporting  
-- **Page Object Model (POM)** → Maintainable test design  
+- **Page Object Model (POM)** → Maintainable test design 
+- **PageFactory**- helps in imtplementing POM, via **WebElement iniotialization** && **passing drivers**. 
 - **Maven** → Build & dependency management  
 - **Docker** → Containerization of test environment  
 - **Jenkins** → CI/CD pipeline for building & pushing Docker images  
@@ -91,22 +93,17 @@ Push it to DockerHub
 Trigger automated tests
 
 📊 Reports & Logs
-Extent Reports → Generated inside test-output/
-
-Screenshots on failure → Stored automatically
+- Extent Reports → Generated inside test-output/
+- Screenshots on failure → Stored automatically
 
 Logs → Captured via Log4j
 
 📌 Future Enhancements
-Integration with Docker Compose / Selenium Grid for distributed parallel execution
-
-Enhanced CI/CD pipeline with Builder & Runner stages
-
-Integration with cloud platforms (e.g., LambdaTest, BrowserStack)
+- Integration with Docker Compose / Selenium Grid for distributed parallel execution
+- Enhanced CI/CD pipeline with Builder & Runner stages
+- Integration with cloud platforms (e.g., LambdaTest, AWS-EC2)
 
 👨‍💻 Author
-Pramesh Kumar
-
-LinkedIn
-
-📧 pramesh.cs@gmail.com
+- Pramesh Kumar
+- LinkedIn: www.linkedin.com/in/prameshkumar
+- 📧 pramesh.cs@gmail.com
