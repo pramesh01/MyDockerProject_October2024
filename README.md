@@ -1,9 +1,8 @@
-# 🚀 selenium-docker-multiapp-framework
+# 🚀 Selenium-Docker-Multiapp-Framework
 
-This repository contains a **Dockerized automation framework** for web application testing.  
-It is built with **Selenium, Java, TestNG, and Maven**, and leverages **Docker & Jenkins** for containerized execution and CI/CD integration.  
-
-The framework demonstrates end-to-end **test automation** for two different sample web applications — a **Flight Reservation system** and a **Vendor Portal.**
+  - This repository contains a **Dockerized automation framework** for web application testing.  
+  - It is built with **Selenium, Java, TestNG, and Maven**, and leverages **Docker & Jenkins** for containerized execution and CI/CD integration.  
+  - The framework demonstrates end-to-end **test automation** for two different sample web applications — a **Flight Reservation system** and a **Vendor Portal.**
 
 ---
 
@@ -67,43 +66,40 @@ The framework demonstrates end-to-end **test automation** for two different samp
 ```bash
 git clone https://github.com/pramesh01/selenium-docker-framework.git
 cd selenium-docker-framework
+
 2. Run tests locally (without Docker)
 
-bash
-Copy code
-mvn clean test
+- mvn clean test
+
 3. Build Docker Image
 
-bash
-Copy code
-docker build -t selenium-docker-framework .
+- docker build -t selenium-docker-framework .
+
 4. Run tests inside Docker Container
 
-bash
-Copy code
-docker run selenium-docker-framework
+- docker run selenium-docker-framework
+
 5. Jenkins Pipeline
 
-The Jenkinsfile provided defines steps to:
+- The Jenkinsfile provided defines steps to:
+  - Build the Docker image
+  - Push it to DockerHub
+  - Trigger automated tests
 
-Build the Docker image
+``` 
 
-Push it to DockerHub
+### 📊 Reports & Logs
+  - Extent Reports → Generated inside test-output/
+  - Screenshots on failure → Stored automatically
 
-Trigger automated tests
+### Logs → Captured via Log4j
 
-📊 Reports & Logs
-- Extent Reports → Generated inside test-output/
-- Screenshots on failure → Stored automatically
-
-Logs → Captured via Log4j
-
-📌 Future Enhancements
+### 📌 Future Enhancements
 - Integration with Docker Compose / Selenium Grid for distributed parallel execution
 - Enhanced CI/CD pipeline with Builder & Runner stages
 - Integration with cloud platforms (e.g., LambdaTest, AWS-EC2)
 
-👨‍💻 Author
-- Pramesh Kumar
+## 👨‍💻 Author
+- **Pramesh Kumar**
 - LinkedIn: www.linkedin.com/in/prameshkumar
 - 📧 pramesh.cs@gmail.com
