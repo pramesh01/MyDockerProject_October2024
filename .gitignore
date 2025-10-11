@@ -1,1 +1,23 @@
-/target/
+# Maven build
+target/
+
+# IDE settings
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# Logs and outputs
+output/
+logs/
+*.log
+
+# Docker volumes and temporary files
+*.tmp
+*.bak
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
